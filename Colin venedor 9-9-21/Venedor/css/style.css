@@ -1,0 +1,157 @@
+* {box-sizing: border-box;}
+
+
+
+.lg-margin {
+    margin-bottom: 40px;
+}
+
+
+
+/* header */
+
+
+.top-header {
+    /* border: 1px solid red; */
+    background-color: #f4f6f3;
+    max-width: 100%;
+}
+
+
+.Venedor-text {
+    /* border: 1px solid red; */
+   padding-left: 210px;
+}
+
+
+
+
+ .dropdown {
+     /* border: 1px solid blue; */
+     margin-top: 40px;
+     padding-left: 180px;
+ }
+ 
+
+.header-nav {
+    /* border: 1px solid blue; */
+    font-size: 14px;
+}
+
+.my-buttons {
+    /* border: 1px solid blue; */
+    padding-left: 200px;
+    margin-top: 35px;
+   
+}
+
+.search-img {
+    /* border: 1px solid red; */
+    width: 20px;
+    height: 30px;
+}
+
+
+
+.top-nav-list {
+    /* border: 1px solid red; */
+    padding-left: 380px;
+}
+
+
+.top-text {
+    /* border: 1px solid red; */
+    color: gray;
+}
+
+.head-text {
+    /* border: 1px solid red; */
+    color: black;
+}
+
+
+/* main */
+
+.new {
+    /* border: 1px solid red; */
+    width: 65px;
+    background-color: #34acbb;
+    color: white;
+}
+
+.mens-collection {
+    width: 240px;
+    background-color: #32373a;
+    color: white;
+}
+
+.lookbook {
+    width: 200px;
+    background-color: #34acbb;
+    color: white;
+}
+
+.spring {
+    width: 360px;
+    background-color: #32373a;
+    color: white;
+}
+
+.sale {
+    width: 70px;
+    background-color: #34acbb;
+    color: white;
+}
+
+.here {
+    width: 400px;
+    background-color: #32373a;
+    color: white;
+}
+
+.title {
+    /* border: 1px solid red; */
+    font-size: 40px;
+}
+
+.text  {
+    /* border: 1px solid red; */
+    width: 95%;
+}
+
+.btn {
+    border: none;
+    background-color: #3c4142;
+}
+
+/* end main */
+
+/* footer */
+
+.welcome-text {
+    /* border: 1px solid blue; */
+    font-size: 24px;
+}
+
+.news-letter {
+    background-color: #d6d6d6;
+    max-width: 100%;
+    padding-left: 400px;
+    height: 70px;
+}
+
+.main-footer {
+    /* border: 1px solid blue; */
+    background-color: #434b4d;
+    max-width: 100%;
+    height: 500px;
+    padding-left: 400px;
+}
+
+.footer-colophon {
+    background-color: #434b4d;
+    max-width: 100%;
+    padding-left: 400px;
+}
+
+

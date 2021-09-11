@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Venedor</title>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0"
+        nonce="DXOGzEKR"></script> <!-- facebook page plugin-->
+    <!-- header -->
+    <header class="header" id="header">
+        <section class="container top-header">
+            <div class="row">
+                <div class="col-md-6 header-links">
+                    <nav class="top-nav">
+                        <ul class="nav justify-content-between top-nav-list">
+                            <li class="nav item top-nav-item" id="wishlist"> <img
+                                    src="media/pencil.png" alt="">
+                                <a class="nav-link top-text" href="#link">My Wishlist</a>
+                            </li>
+                            <li class="nav item top-nav-item" id="account"> <img src="media/user.png"
+                                    alt="">
+                                <a class="nav-link top-text" href="#link">My Account</a>
+                            </li>
+                            <li class="nav item top-nav-item" id="cart"> <img src="media/cart.png"
+                                    alt="">
+                                <a class="nav-link top-text" href="#link">My Cart</a>
+                            </li>
+                            <li class="nav item top-nav-item" id="checkout"> <img
+                                    src="media/mark.png" alt="">
+                                <a class="nav-link top-text" href="#link">Checkout</a>
+                            </li>
+                    </nav>
+                </div>
+                <div class="col-md-6 Venedor-text">
+                    <span class="welcome-text">Welcome to Venedor!</span>
+                    <a href="#link">login</a> or <a href="#link">create an account</a>
+                </div>
+            </div>
+        </section>
+        <section class="container bottom-header">
+            <div class="row">
+                <div class="col-md-6 mt-4"> <!--adds margin top-->
+                    <img src="http://portotheme.com/html/venedor/blue/images/logo2.png" alt="">
+                </div>
+                <div class="col-md-6 my-buttons">
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            US Dollar
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Euro</a>
+                            <a class="dropdown-item" href="#">Pound</a>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img src="http://portotheme.com/html/venedor/blue/images/england-flag.png" alt=""> English
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"> <img src="http://portotheme.com/html/venedor/blue/images/italy-flag.png" alt="">
+                                Italian
+                            </a>
+                            <a class="dropdown-item" href="#"> <img src="http://portotheme.com/html/venedor/blue/images/spain-flag.png" alt="">
+                                Spanish
+                            </a>
+                            <a class="dropdown-item" href="#"> <img src="http://portotheme.com/html/venedor/blue/images/france-flag.png" alt="">
+                                French
+                            </a>
+                            <a class="dropdown-item" href="#"> <img src="http://portotheme.com/html/venedor/blue/images/germany-flag.png" alt="">
+                                German
+                            </a>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img src="" alt=""> 0 item(s)-$0.00
+                        </button>
+                        <div class="dropdown-menu">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <Section class="container main-nav">
+            <div class="row">
+                <div class="col-md-6 mt-4">
+                    <nav class="header-nav">
+                        <ul class="nav justify-content-between bottom-nav-list">
+                            <li class="nav item head-nav-item"><a class="nav-link head-text" href="#link">HOME</a>
+                            </li>
+                            <li class="nav item head-nav-item"> <a class="nav-link head-text" href="#link">SHOP</a></li>
+                            <li class="nav item head-nav-item"> <a class="nav-link head-text" href="#link">PAGES</a>
+                            </li>
+                            <li class="nav item head-nav-item"> <a class="nav-link head-text" href="#link">PORTFOLIO</a>
+                            </li>
+                            <li class="nav item head-nav-item"> <a class="nav-link head-text" href="#link">ELEMENTS</a>
+                            </li>
+                            <li class="nav item head-nav-item"> <a class="nav-link head-text" href="#link">CONTACT
+                                    US</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-6">
+                    <div class="search">
+                        <form action="#">
+                            <input type="text" placeholder=" Search here" name="search">
+                            <img src="media/search.jpg" alt="" class="search-img">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </Section>
+    </header>
+    <!-- end header -->
+    <!-- main -->
+    <main class="main">
+        <section class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-md py-2">
+                                <img class="d-block img-fluid"
+                                    src="http://portotheme.com/html/venedor/blue/images/homeslider/slide2_1.png"
+                                    alt="First slide">
+                            </div>
+                            <div class="col-md py-2">
+                                <h2 class="new">New</h2>
+                                <h2 class="mens-collection">Men Collection</h2>
+                                <p> Integer ultrices ipsum id justo ultrices sed blandit felis ultricies. Duis semper
+                                    tristique congue. Pellentesque id orcised ligula elementum tempor ut non nulla.
+                                    Aenean lectus nulla, rutrum in tincidunt non, vestibulum a arcu.... </p>
+                                <button class="btn btn-primary">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md py-2">
+                                <img class="d-block img-fluid"
+                                    src="http://portotheme.com/html/venedor/blue/images/homeslider/slide3_1.png"
+                                    alt="Second slide">
+                            </div>
+                            <div class="col-md py-2">
+                                <h2 class="sale">SALE</h2>
+                                <h2 class="here">it's here & You're invited</h2>
+                                <p> It’s here & You’re invited
+                                    Nulla facilisi. Sed ultrices augue in neque aliquet eleifend volutpat augue viverra.
+                                    Integer ante tellus, gravida ut vestibulum ut, varius idleo. Aliquam congue augue
+                                    nec neque egestas bibendum. Phasellus dapibus tellus quis metus... </p>
+                                <button class="btn btn-primary">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md py-2">
+                                <img class="d-block img-fluid"
+                                    src="http://portotheme.com/html/venedor/blue/images/homeslider/slide1_1.png"
+                                    alt="Second slide">
+                            </div>
+                            <div class="col-md py-2">
+                                <h2 class="lookbook">LOOKBOOK</h2>
+                                <h2 class="spring">Spring-Summer-2012</h2>
+                                <p>Praesent arcu urna, cursus sit amet condimentum id, dapibusa mauris. Sed ante massa
+                                    pellentesque luctus, magna sed ultricies molestie, felis tortor pellentesque ligula,
+                                    in
+                                    sagittis neque turpis eget augue.</p>
+                                <button class="btn btn-primary">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="lg-margin"></div>
+        <section class="section container">
+            <div class="row">
+                <div class="col">
+                    <div class="images">
+                        <img src="media/shipping.png" alt="placeholder img" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="images">
+                        <img src="media/sale2.png" alt="placeholder img" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="images">
+                        <img src="media/arrivals.png" alt="placeholder img" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="lg-margin"></div>
+        <div class="container latest-items">
+            <header class="content">
+                <div class="title">Latest</div>
+                <p class="title-description">Only with us you can get a new model with a discount</p>
+            </header>
+        </div>
+        <div class="container my-4">
+            <!--Carousel Wrapper-->
+            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                <!--Controls-->
+                <div class="controls-top">
+                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
+                            class="fa fa-chevron-left"></i></a>
+                    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                            class="fa fa-chevron-right"></i></a>
+                </div>
+                <!--/.Controls-->
+
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                    <li data-target="#multi-item-example" data-slide-to="1"></li>
+                    <li data-target="#multi-item-example" data-slide-to="2"></li>
+                </ol>
+                <!--/.Indicators-->
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                    <!--First slide-->
+                    <div class="carousel-item active">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="media/red shoe.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Phasellus consequat</h4>
+                                        <a class="btn btn-primary">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="media/shirt.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Phasellus consequat</h4>
+                                        <a class="btn btn-primary">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="media/pink shoe.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Phasellus consequat</h4>
+                                        <a class="btn btn-primary">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="media/silver shoe.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Phasellus consequat</h4>
+                                        <a class="btn btn-primary">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="media/black shoe.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Phasellus consequat</h4>
+                                        <a class="btn btn-primary">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="media/coaat.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Phasellus consequat</h4>
+                                        <a class="btn btn-primary">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--Second slide-->
+        </div>
+        <div class="lg-margin"></div>
+        <section class="container venedor-text">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="title">Welcome to Venedor</div>
+                    <p class="text"> Venedor is a fully responsive Magento theme with advanced admin module. Based on
+                        Bootstrap’s 12 column 1200px responsive grid Theme. Great looks on desktops, tablets and
+                        mobiles.
+                        Venedor is extremely customizable, easy to use and fully responsive. Suitable for every type of
+                        store. Great as a starting point for your custom projects. This theme includes several
+                        extensions including ajax price slider that will help you improve your sales. We supply a full
+                        help with our products and after purchase support to all our customers. <a href="link"> Buy
+                            Venedor Theme!</a> </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="http://portotheme.com/html/venedor/blue/images/showcase.png" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="container sale-items">
+            <header class="content">
+                <div class="title">On Sale</div>
+                <p class="title-description">Only with us you can get a new model with a discount</p>
+            </header>
+        </div>
+        <div class="container my-4">
+            <!--Carousel Wrapper-->
+            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                <!--Controls-->
+                <div class="controls-top">
+                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
+                            class="fa fa-chevron-left"></i></a>
+                    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                            class="fa fa-chevron-right"></i></a>
+                </div>
+                <!--/.Controls-->
+
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                    <li data-target="#multi-item-example" data-slide-to="1"></li>
+                    <li data-target="#multi-item-example" data-slide-to="2"></li>
+                </ol>
+                <!--/.Indicators-->
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                    <!--First slide-->
+                    <div class="carousel-item active">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="media/red shoe.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Phasellus consequat</h4>
+                                        <a class="btn btn-primary">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="media/shirt.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Phasellus consequat</h4>
+                                        <a class="btn btn-primary">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="media/pink shoe.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Phasellus consequat</h4>
+                                        <a class="btn btn-primary">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="media/silver shoe.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Phasellus consequat</h4>
+                                        <a class="btn btn-primary">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="media/black shoe.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Phasellus consequat</h4>
+                                        <a class="btn btn-primary">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="media/coaat.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Phasellus consequat</h4>
+                                        <a class="btn btn-primary">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--Second slide-->
+        </div>
+        <div class="container manufactures">
+            <header class="content">
+                <div class="title">Manufactures</div>
+            </header>
+        </div>
+        <div class="container my-4">
+            <!--Carousel Wrapper-->
+            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                <!--Controls-->
+                <div class="controls-top">
+                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
+                            class="fa fa-chevron-left"></i></a>
+                    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                            class="fa fa-chevron-right"></i></a>
+                </div>
+                <!--/.Controls-->
+
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                    <li data-target="#multi-item-example" data-slide-to="1"></li>
+                    <li data-target="#multi-item-example" data-slide-to="2"></li>
+                </ol>
+                <!--/.Indicators-->
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                    <!--First slide-->
+                    <div class="carousel-item active">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="mb-2">
+                                    <img class="img-top"
+                                        src="http://portotheme.com/html/venedor/blue/images/brands/brand-logo.png"
+                                        alt="image cap">
+                                    <div class="body">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="mb-2">
+                                    <img class="img-top"
+                                        src="http://portotheme.com/html/venedor/blue/images/brands/brand-logo.png"
+                                        alt="image cap">
+                                    <div class="body">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="mb-2">
+                                    <img class="img-top"
+                                        src="http://portotheme.com/html/venedor/blue/images/brands/brand-logo.png"
+                                        alt="image cap">
+                                    <div class="body">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="mb-2">
+                                    <img class="img-top"
+                                        src="http://portotheme.com/html/venedor/blue/images/brands/brand-logo.png"
+                                        alt="image cap">
+                                    <div class="body">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="mb-2">
+                                    <img class="img-top"
+                                        src="http://portotheme.com/html/venedor/blue/images/brands/brand-logo.png"
+                                        alt="image cap">
+                                    <div class="body">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="mb-2">
+                                    <img class="img-top"
+                                        src="http://portotheme.com/html/venedor/blue/images/brands/brand-logo.png"
+                                        alt="image cap">
+                                    <div class="body">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="lg-margin"></div>
+    </main>
+    <!-- end main -->
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <section class="container news-letter">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="welcome-text">SIGN UP TO RECEIVE THE LATEST FASHION NEWS</div>
+                </div>
+                <div class="col-md-6">
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Enter your email address">
+                    <button class="btn">SIGN UP</button>
+                </div>
+            </div>
+        </section>
+        <section class="container main-footer">
+            <div class="row row-cols-4">
+                <div class="col">
+                    <h2 class="sub-header">MY ACCOUNT</h2>
+                    <ul class="account-list">
+                        <li class="account-list-item"><a href="#link">My account</a></li>
+                        <li class="account-list-item"><a href="#link">Personal information</a></li>
+                        <li class="account-list-item"><a href="#link">Addresses</a></li>
+                        <li class="account-list-item"><a href="#link">Discount</a></li>
+                        <li class="account-list-item"><a href="#link">Order History</a></li>
+                        <li class="account-list-item"><a href="#link">Your Vouchers</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2 class="sub-header">INFORMATION</h2>
+                    <ul class="mens-list">
+                        <li class="information-list-item"><a href="#link">New products</a></li>
+                        <li class="information-list-item"><a href="#link">Top sellers</a></li>
+                        <li class="information-list-item"><a href="#link">Specials</a></li>
+                        <li class="information-list-item"><a href="#link">Manufactures</a></li>
+                        <li class="information-list-item"><a href="#link">Suppliers</a></li>
+                        <li class="information-list-item"><a href="#link">Our stores</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2 class="sub-header">FROM TWITTER</h2>
+                    <p>Donec et tortor orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                        cubillia Curae <a href="#link">http://tco/MqacjST476</a> </p>
+                    <p>Aliquam aliquam fermentum arcu. Sed et magna dolor, eu fermentum enim. Aliquam <a
+                            href="#link">http://t.co/CCkfps248sq</a> consectetur ligula </p>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="fb-page" data-href="https://www.facebook.com/envato" data-width="380"
+                        data-hide-cover="false" data-show-facepile="false">
+                    </div>
+                    <!--facebook like button code-->
+                </div>
+        </section>
+        <section class="container footer-colophon">
+            <div class="row">
+                <div class="col-md-6">
+                    <nav class="footer-nav">
+                        <ul class="nav justify content-end">
+                            <li class="social-list-item">
+                            <li class="nav item footer-nav-item"> <a class="nav-link" href="#link"> <img src="media/facebook.png">
+                                </a>
+                            </li>
+                            <li class="nav item footer-nav-item"> <a class="nav-link" href="#link"> <img src="media/twitter.png">
+                                </a>
+                            </li>
+                            <li class="nav item footer-nav-item"> <a class="nav-link" href="#link"> <img src="media/wifi.png">
+                                </a>
+                            </li>
+                            <li class="nav item footer-nav-item"> <a class="nav-link" href="#link"> <img src="media/delicious.png">
+                                </a>
+                            </li>
+                            <li class="nav item footer-nav-item"> <a class="nav-link" href="#link"> <img src="media/linkedin2.png">
+                                </a>
+                            </li>
+                            <li class="nav item footer-nav-item"> <a class="nav-link" href="#link"> <img src="media/skype.png">
+                                </a>
+                            </li>
+                            <li class="nav item footer-nav-item"> <a class="nav-link" href="#link"> <img src="media/envelop.png">
+                                </a>
+                            </li>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-6">
+                    <p class="colophon-text"> &copy; 2014 Powered by Company &middot; All Rights Reserved.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- end footer -->
+</body>
+
+</html>
